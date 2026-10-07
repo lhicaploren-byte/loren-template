@@ -39,7 +39,7 @@ export const profile: Profile = {
   firstName: 'Loren',
   handle: '@lorenliwanag',
   role: 'Medical Virtual Assistant | Medical Laboratory Scientist',
-  avatarSrc: '/loren-profile.jpg',
+  avatarSrc: '/avatar.svg',
   verifiedLabel: 'Medical Laboratory Scientist',
   email: 'lhicaploren@gmail.com',
   location: 'Philippines',
@@ -69,7 +69,7 @@ export const profile: Profile = {
 
   hero: {
     body: 'Medical Laboratory Scientist transitioning into Medical Virtual Assistance, providing reliable healthcare administrative, research, and data support with accuracy and confidentiality.',
-    portraitSrc: '/loren-profile.jpg',
+    portraitSrc: '/avatar.svg',
     portraitAlt: 'Professional portrait of Loren H. Liwanag',
   },
 
