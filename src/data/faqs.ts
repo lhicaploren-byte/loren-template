@@ -1,30 +1,27 @@
 export type QA = { q: string; a: string }
 
 /**
- * The questions people ask before they email. One list, used by the FAQ
- * accordion on the Contact view (and the legacy long-scroll FAQ section).
- * Five questions, two or three sentences each: the accordion sits in a
- * fixed panel and more than that pushes the email row off the plate.
+ * Frequently asked questions for potential healthcare clients.
  */
 export const FAQS: QA[] = [
   {
-    q: 'What do you do?',
-    a: 'PLACEHOLDER - tell me what to put here: the kinds of work you take on, and who it is usually for.',
+    q: 'What services do you provide?',
+    a: 'I provide medical administrative support, healthcare research, and medical data entry. My goal is to help healthcare professionals stay organized and manage administrative tasks accurately and efficiently.',
   },
   {
-    q: 'How fast can you start?',
-    a: 'PLACEHOLDER - tell me what to put here: your usual lead time for small fixes vs. larger projects, and your working hours.',
+    q: 'What is your healthcare background?',
+    a: 'I am a Medical Laboratory Scientist with three years of healthcare experience. My background has given me experience with medical terminology, healthcare information, attention to detail, and careful handling of patient-related data.',
   },
   {
-    q: 'How much do you charge?',
-    a: 'PLACEHOLDER - tell me what to put here: how you price (hourly, per project, retainer) and how a quote is put together.',
+    q: 'How do you handle confidential information?',
+    a: 'I understand the importance of confidentiality when working with healthcare information. I approach patient and healthcare data carefully and follow appropriate privacy and security practices when handling information.',
   },
   {
-    q: 'Where are you based?',
-    a: 'PLACEHOLDER - tell me what to put here: your location or timezone, and which client timezones you overlap with.',
+    q: 'What tools can you work with?',
+    a: 'I can work with Microsoft Excel for data entry and records organization, along with common digital tools used for administrative and research tasks. I am also comfortable learning new tools and workflows as needed.',
   },
   {
-    q: 'What happens after I write?',
-    a: 'PLACEHOLDER - tell me what to put here: how fast you reply and what the next step looks like.',
+    q: 'How can I contact you?',
+    a: 'You can contact me by email or through LinkedIn. I would be happy to discuss your healthcare administrative, research, or data entry needs and how I may be able to support your workflow.',
   },
 ]
