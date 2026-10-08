@@ -1,47 +1,75 @@
-import Flagship from '@/components/Flagship'
-
-/**
- * ShowcaseGrid - the /showcase view on one glass sheet.
- *
- * A page head with a badge card on the right, then the Flagship build: the
- * five-tab product mock, the copy, the CTA, and the testimonial marquee that
- * runs under it. Same head and glass as Projects and Services, so the shell
- * reads as one system. Styles live in src/styles/showcase.css (.ktools).
- */
 export default function ShowcaseGrid() {
   return (
-    <section className="pgrid ktools" aria-labelledby="showcase-title">
-      <header className="pgrid__head ktools__head">
-        <div className="ktools__head-copy">
-          <span className="pgrid__eyebrow">Showcase</span>
-          <h1 className="pgrid__title" id="showcase-title">
-            Your flagship product, and the people using it.
-          </h1>
-          <p className="pgrid__lede">
-            PLACEHOLDER - tell me what to put here: one line on what this product is and why a visitor should look at it.
-          </p>
-        </div>
+    <section className="pgrid" aria-labelledby="showcase-title">
+      <header className="pgrid__head">
+        <span className="pgrid__eyebrow">Professional Profile</span>
 
-        {/* Badge slot. Fixed 320x72 box so it sits on the baseline of the
-            lede. Swap the image and text for a real badge, award or launch
-            listing, and point the link at it. */}
-        <div className="ktools__vote">
-          <p className="ktools__vote-label">
-            Featured on
-            <span aria-hidden="true" className="ktools__vote-dot" />
-            <span className="ktools__vote-ask">Placeholder</span>
-          </p>
-          <a className="ktools__vote-frame ktools__vote-card" href="#">
-            <img src="/placeholders/badge.svg" alt="" width="48" height="48" />
-            <span className="ktools__vote-text">
-              PLACEHOLDER - a badge, award or launch link
-            </span>
-          </a>
-        </div>
+        <h1 className="pgrid__title" id="showcase-title">
+          Healthcare experience meets dependable virtual support.
+        </h1>
+
+        <p className="pgrid__lede">
+          Medical Laboratory Scientist transitioning into Medical Virtual
+          Assistance, with a focus on accuracy, organization, confidentiality,
+          and reliable healthcare support.
+        </p>
       </header>
 
-      <div className="home__glass ktools__glass">
-        <Flagship eyebrow="Flagship build" />
+      <div className="home__glass pgrid__glass">
+        <div className="bento">
+          <article className="bento__card bento__card--wide">
+            <div className="bento__head">
+              <span className="bento__title">
+                Medical Virtual Assistant
+              </span>
+
+              <span className="bento__desc">
+                Bringing three years of healthcare experience into
+                administrative, research, and medical data support.
+              </span>
+            </div>
+
+            <div style={{ marginTop: '1.5rem' }}>
+              <span className="sgrid__chip">Healthcare Professional</span>
+
+              <p style={{ marginTop: '1rem' }}>
+                My background as a Medical Laboratory Scientist has developed
+                my attention to detail, familiarity with medical terminology,
+                and ability to work carefully with healthcare information.
+              </p>
+
+              <ul
+                className="sgrid__bullets"
+                role="list"
+                style={{ marginTop: '1.25rem' }}
+              >
+                <li className="sgrid__bullet">
+                  <span>Medical terminology</span>
+                </li>
+
+                <li className="sgrid__bullet">
+                  <span>Healthcare administration</span>
+                </li>
+
+                <li className="sgrid__bullet">
+                  <span>Medical data entry</span>
+                </li>
+
+                <li className="sgrid__bullet">
+                  <span>Patient record management</span>
+                </li>
+
+                <li className="sgrid__bullet">
+                  <span>Laboratory data management</span>
+                </li>
+
+                <li className="sgrid__bullet">
+                  <span>Confidential information handling</span>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
   )
