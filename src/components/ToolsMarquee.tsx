@@ -38,7 +38,7 @@ type Tool = {
 }
 
 export const tools: Tool[] = [
-  { name: 'Microsoft Excel',          iconPath: '/icons/excel.svg' },
+  { name: 'Microsoft Excel',          iconPath: '/icons/googleworkspace.svg' },
 
 ]
 
